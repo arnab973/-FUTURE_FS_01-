@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnab Das - Full Stack Developer & AI-ML Enthusiast</title>
+    <meta name="description" content="Portfolio of Arnab Das, B.Tech CSE (AI-ML) student and Full Stack Web Developer. Showcasing modern web development projects and AI-ML expertise.">
+    <meta name="keywords" content="Arnab Das, Full Stack Developer, AI, ML, Web Development, React, Node.js, Portfolio">
+    <meta name="author" content="Arnab Das">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Arnab Das - Full Stack Developer & AI-ML Enthusiast">
+    <meta property="og:description" content="Portfolio showcasing modern web development projects and AI-ML expertise">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arnabdas-portfolio.netlify.app">
+    
+    <!-- Preload fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                Arnab<span class="brand-accent">Das</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#services" class="mobile-nav-link">Services</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Profile Picture -->
+                <div class="profile-picture">
+                    <div class="profile-inner">
+                        <img src ="arnab.jpg" alt="Profile Picture">
+                    
+                        <div class="profile-placeholder">AD</div>
+                    </div>
+                </div>
+
+                <!-- Name and Title -->
+                <h1 class="hero-title">
+                    Arnab <span class="title-accent">Das</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Aspiring Full Stack Developer | AI-ML Enthusiast
+                </p>
+                
+                <p class="hero-description">
+                    B.Tech CSE (AI-ML) student passionate about creating modern, responsive web applications
+                    and exploring the intersection of artificial intelligence and web development.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        Get In Touch
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i data-lucide="download"></i>
+                        Download Resume
+                    </button>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <button class="scroll-indicator" onclick="scrollToSection('about')">
+                    <i data-lucide="chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    About <span class="title-accent">Me</span>
+                </h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-content">
+                <!-- About Text -->
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I am <span class="text-bold">Arnab Das</span>, currently pursuing a B.Tech in Computer Science and Engineering (AI & ML) at Brainware University, Kolkata. I'm passionate about building modern, responsive websites and currently working as a Full Stack Web Development Intern at <span class="text-accent">Future Interns</span>.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        My journey in technology combines my academic focus on AI and Machine Learning with practical experience in web development. I enjoy creating user-friendly applications that solve real-world problems while exploring the latest technologies and best practices in the field.
+                    </p>
+
+                    <div class="current-focus">
+                        <h3 class="focus-title">Current Focus</h3>
+                        <ul class="focus-list">
+                            <li>• Full Stack Web Development at Future Interns</li>
+                            <li>• AI & ML coursework and projects</li>
+                            <li>• Building responsive, modern web applications</li>
+                            <li>• Exploring emerging technologies in web development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Timeline -->
+                <div class="education-section">
+                    <h3 class="education-title">Educational Background</h3>
+                    
+                    <div class="education-item current">
+                        <div class="education-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4 class="education-degree">B.Tech in CSE (AI-ML)</h4>
+                            <p class="education-institution">Brainware University</p>
+                            <div class="education-details">
+                                <span><i data-lucide="map-pin"></i> Kolkata</span>
+                                <span><i data-lucide="calendar"></i> Ongoing - 2nd Year</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4 class="education-degree">Higher Secondary (HS)</h4>
+                            <p class="education-institution">Pathfinder Higher Secondary Public School (PHSPS)</p>
+                            <div class="education-details">
+                                <span><i data-lucide="map-pin"></i> Jodhpur Park, Kolkata</span>
+                                <span><i data-lucide="calendar"></i> 2021</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4 class="education-degree">Madhyamik</h4>
+                            <p class="education-institution">Chandpur Upendranath High School</p>
+                            <div class="education-details">
+                                <span><i data-lucide="map-pin"></i> Howrah</span>
+                                <span><i data-lucide="calendar"></i> 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    My <span class="title-accent">Skills</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    A comprehensive set of technical skills focused on modern web development and emerging technologies.
+                </p>
+            </div>
+
+            <!-- Core Skills Highlight -->
+            <div class="core-skills">
+                <h3 class="core-skills-title">Core Technologies</h3>
+                <div class="core-skills-grid">
+                    <div class="core-skill">HTML</div>
+                    <div class="core-skill">CSS</div>
+                    <div class="core-skill">JavaScript</div>
+                    <div class="core-skill">React</div>
+                    <div class="core-skill">Node.js</div>
+                </div>
+            </div>
+
+            <!-- Skill Categories Grid -->
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i data-lucide="globe" class="skill-icon teal"></i>
+                        <h3 class="skill-title">Frontend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">HTML5</div>
+                        <div class="skill-item">CSS3</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Tailwind CSS</div>
+                        <div class="skill-item">Responsive Design</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i data-lucide="database" class="skill-icon blue"></i>
+                        <h3 class="skill-title">Backend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Express.js</div>
+                        <div class="skill-item">RESTful APIs</div>
+                        <div class="skill-item">Database Integration</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i data-lucide="code" class="skill-icon purple"></i>
+                        <h3 class="skill-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">TypeScript</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i data-lucide="zap" class="skill-icon orange"></i>
+                        <h3 class="skill-title">Development Tools</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">VS Code</div>
+                        <div class="skill-item">Chrome DevTools</div>
+                        <div class="skill-item">npm/yarn</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i data-lucide="palette" class="skill-icon pink"></i>
+                        <h3 class="skill-title">UI/UX Design</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Figma</div>
+                        <div class="skill-item">Responsive Design</div>
+                        <div class="skill-item">User Experience</div>
+                        <div class="skill-item">Prototyping</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i data-lucide="smartphone" class="skill-icon green"></i>
+                        <h3 class="skill-title">Mobile Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">React Native</div>
+                        <div class="skill-item">Mobile-First Design</div>
+                        <div class="skill-item">Progressive Web Apps</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Tags -->
+            <div class="additional-skills">
+                <h3 class="additional-title">Additional Expertise</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Full Stack Development</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">AI & ML Integration</span>
+                    <span class="skill-tag">SEO Optimization</span>
+                    <span class="skill-tag">Performance Optimization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    My <span class="title-accent">Projects</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    A collection of projects showcasing my skills in web development and UI/UX design.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <!-- Project Image -->
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Facebook Login Page">
+                        <div class="project-category">
+                            <i data-lucide="palette" class="category-icon"></i>
+                            <span>UI/UX Practice</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="project-content">
+                        <h3 class="project-title">Facebook Login Page</h3>
+                        <p class="project-description">Built using HTML, CSS, and JavaScript as a UI/UX practice project replicating the Facebook login experience. Features responsive design and interactive elements.</p>
+
+                        <!-- Technologies -->
+                        <div class="project-technologies">
+                            <h4 class="tech-title">Technologies Used</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="project-features">
+                            <h4 class="features-title">Key Features</h4>
+                            <ul class="features-list">
+                                <li>Pixel-perfect design replication</li>
+                                <li>Responsive layout for all devices</li>
+                                <li>Interactive form validation</li>
+                                <li>Smooth animations and transitions</li>
+                            </ul>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="project-buttons">
+                            <button class="btn btn-primary">
+                                <i data-lucide="external-link"></i>
+                                View Project
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i data-lucide="github"></i>
+                                Source Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <!-- Project Image -->
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Canteen Web Page">
+                        <div class="project-category">
+                            <i data-lucide="code" class="category-icon"></i>
+                            <span>Static Website</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="project-content">
+                        <h3 class="project-title">Canteen Web Page</h3>
+                        <p class="project-description">A basic static web page created using HTML, CSS, and JavaScript to represent a university canteen's digital presence. Includes menu display and contact information.</p>
+
+                        <!-- Technologies -->
+                        <div class="project-technologies">
+                            <h4 class="tech-title">Technologies Used</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="project-features">
+                            <h4 class="features-title">Key Features</h4>
+                            <ul class="features-list">
+                                <li>Clean, modern design</li>
+                                <li>Menu showcase with pricing</li>
+                                <li>Contact information display</li>
+                                <li>Mobile-friendly interface</li>
+                            </ul>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="project-buttons">
+                            <button class="btn btn-primary">
+                                <i data-lucide="external-link"></i>
+                                View Project
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i data-lucide="github"></i>
+                                Source Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="projects-cta">
+                <div class="cta-content">
+                    <h3 class="cta-title">Interested in my work?</h3>
+                    <p class="cta-description">I'm always working on new projects and learning new technologies. Let's connect and discuss potential collaborations!</p>
+                    <button class="btn btn-primary">View More Projects</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    My <span class="title-accent">Services</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Professional web development services to help you establish a strong online presence and achieve your digital goals.
+                </p>
+            </div>
+
+            <!-- Main Services Grid -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Interactive Resume Design</h3>
+                            <p class="service-price">Starting at ₹2,999</p>
+                        </div>
+                    </div>
+
+                    <p class="service-description">Create stunning, interactive resumes that stand out from the crowd with modern design and engaging animations.</p>
+
+                    <div class="service-features">
+                        <h4 class="features-title">What's Included:</h4>
+                        <div class="features-grid">
+                            <div class="feature-item">Custom Design</div>
+                            <div class="feature-item">Interactive Elements</div>
+                            <div class="feature-item">Print-Friendly</div>
+                            <div class="feature-item">ATS Compatible</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary service-btn">Get Started</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Personal Portfolio Development</h3>
+                            <p class="service-price">Starting at ₹4,999</p>
+                        </div>
+                    </div>
+
+                    <p class="service-description">Build professional portfolio websites that showcase your work and skills with modern web technologies.</p>
+
+                    <div class="service-features">
+                        <h4 class="features-title">What's Included:</h4>
+                        <div class="features-grid">
+                            <div class="feature-item">Responsive Design</div>
+                            <div class="feature-item">Modern UI/UX</div>
+                            <div class="feature-item">Fast Loading</div>
+                            <div class="feature-item">SEO Optimized</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary service-btn">Get Started</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">Contact Form Integration</h3>
+                            <p class="service-price">Starting at ₹1,999</p>
+                        </div>
+                    </div>
+
+                    <p class="service-description">Implement secure contact forms with email notifications to help you connect with your audience effectively.</p>
+
+                    <div class="service-features">
+                        <h4 class="features-title">What's Included:</h4>
+                        <div class="features-grid">
+                            <div class="feature-item">Email Notifications</div>
+                            <div class="feature-item">Spam Protection</div>
+                            <div class="feature-item">Form Validation</div>
+                            <div class="feature-item">Database Storage</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary service-btn">Get Started</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i data-lucide="search"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-title">SEO Optimization</h3>
+                            <p class="service-price">Starting at ₹3,999</p>
+                        </div>
+                    </div>
+
+                    <p class="service-description">Improve your website's visibility on search engines with comprehensive SEO optimization strategies.</p>
+
+                    <div class="service-features">
+                        <h4 class="features-title">What's Included:</h4>
+                        <div class="features-grid">
+                            <div class="feature-item">Keyword Research</div>
+                            <div class="feature-item">Meta Optimization</div>
+                            <div class="feature-item">Site Speed</div>
+                            <div class="feature-item">Analytics Setup</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary service-btn">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="additional-services">
+                <h3 class="additional-title">Additional Services</h3>
+                <div class="additional-grid">
+                    <div class="additional-item">
+                        <i data-lucide="zap" class="additional-icon"></i>
+                        <div class="additional-content">
+                            <h4 class="additional-name">Performance Optimization</h4>
+                            <p class="additional-desc">Speed up your website for better user experience</p>
+                        </div>
+                    </div>
+                    <div class="additional-item">
+                        <i data-lucide="users" class="additional-icon"></i>
+                        <div class="additional-content">
+                            <h4 class="additional-name">User Experience Design</h4>
+                            <p class="additional-desc">Create intuitive and engaging user interfaces</p>
+                        </div>
+                    </div>
+                    <div class="additional-item">
+                        <i data-lucide="code" class="additional-icon"></i>
+                        <div class="additional-content">
+                            <h4 class="additional-name">Custom Web Applications</h4>
+                            <p class="additional-desc">Build tailored solutions for your specific needs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="services-cta">
+                <div class="cta-content">
+                    <h3 class="cta-title">Ready to Start Your Project?</h3>
+                    <p class="cta-description">Let's discuss your requirements and create something amazing together!</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-light">Get Free Quote</button>
+                        <button class="btn btn-outline">Schedule Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get In <span class="title-accent">Touch</span>
+                </h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Ready to start your next project? Let's connect and discuss how we can work together to bring your ideas to life.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h3 class="form-title">Send Me a Message</h3>
+                    
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <i data-lucide="check-circle"></i>
+                        <p>Thank you! Your message has been sent successfully.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Tell me about your project or just say hello!"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <div class="contact-info">
+                        <h3 class="info-title">Contact Information</h3>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Email</h4>
+                                    <a href="mailto:arnabcse2003@gmail.com">arnabcse2003@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+91XXXXXXXXX">+91 XXXXX XXXXX</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Location</h4>
+                                    <span>Kolkata, West Bengal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h3 class="social-title">Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/arnabdas2003" target="_blank" class="social-link linkedin">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/1HVP3gHHFY/" target="_blank" class="social-link facebook">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/creative_arnab?igsh=MWZmdmdvZTFvMGZ4Ng==" target="_blank" class="social-link instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="availability">
+                        <h4 class="availability-title">Current Availability</h4>
+                        <p class="availability-text">
+                            I'm currently available for new projects and collaborations. Looking forward to working with you!
+                        </p>
+                        <div class="availability-status">
+                            <div class="status-indicator"></div>
+                            <span>Available for new projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        Arnab<span class="brand-accent">Das</span>
+                    </div>
+                    <p class="footer-description">
+                        Full Stack Developer passionate about creating modern, responsive web applications and exploring AI-ML technologies.
+                    </p>
+                    <div class="footer-status">
+                        <div class="status-dot"></div>
+                        Available for new projects
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <div class="links-grid">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#skills" class="footer-link">Skills</a>
+                        <a href="#projects" class="footer-link">Projects</a>
+                        <a href="#services" class="footer-link">Services</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3 class="footer-title">Get In Touch</h3>
+                    <div class="contact-details">
+                        <p>arnabcse2003@gmail.com</p>
+                        <p>Kolkata, West Bengal</p>
+                        <p>Full Stack Web Development Intern</p>
+                        <p class="company">Future Interns</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © <span id="currentYear"></span> Arnab Das. Made with <i data-lucide="heart" class="heart-icon"></i> and lots of coffee.
+                </div>
+                
+                <div class="footer-actions">
+                    <div class="footer-tech">
+                        Built with HTML, CSS & JavaScript
+                    </div>
+                    <button class="back-to-top" id="backToTop" title="Back to top">
+                        <i data-lucide="arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
